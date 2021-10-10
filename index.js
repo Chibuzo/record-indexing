@@ -6,10 +6,6 @@ const { handleError, ErrorHandler } = require('./helpers/errorHandler');
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.status(200).json({ message: 'An Indexing Project' });
-});
-
 app.use('/', routes);
 
 // catch 404 routes
