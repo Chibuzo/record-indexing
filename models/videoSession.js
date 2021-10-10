@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.TEXT
         },
         timestamp: {
-            type: DataTypes.DATE
+            type: DataTypes.BIGINT
         }
     }, {
         tableName: 'videosession'
