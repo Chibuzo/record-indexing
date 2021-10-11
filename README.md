@@ -24,7 +24,7 @@ This small project focuses on ingesting data from a JSON recording, indexing it,
   
  - To search for content
  
-    `GET/content?keywords=hello`
+    `GET /content?keywords=hello`
   
     for more than one keywords, separate with coma (,) e.g `keywords=hello,world`
   
