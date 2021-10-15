@@ -16,6 +16,8 @@ const extractData = async data_type => {
         chat: 'chat.json',
         video: 'video.json'
     };
+    if (!filename[data_type]) throw new Error('Unsupported data type');
+
     const data = await readFile(filename[data_type]);
     return process[data_type](data);
 }
